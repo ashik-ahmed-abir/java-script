@@ -1,12 +1,35 @@
-const btnOne = document.querySelector('#one');
-const btnTwo = document.querySelector('#two');
+const outputField = document.querySelector('#output');
+const clearBtn = document.querySelector('#clear');
+const equalBtn = document.querySelector('#equal');
+// const btnTwo = document.querySelector('#two');
 
-btnOne.addEventListener('click', () => {
-    console.log(btnOne.value);
+
+
+const display = (x) => {
+    outputField.value = outputField.value + x;
+    console.log(outputField.value);
+};
+
+// const clear = () => {
+//     outputField.value = null;
+// };
+
+clearBtn.addEventListener('click', () => {
+    outputField.value = null;
 });
-btnTwo.addEventListener('click', () => {
-    console.log(btnTwo.value);
+
+equalBtn.addEventListener('click', () => {
+    outputField.value = 00;
 });
+
+
+
+// btnOne.addEventListener('click', () => {
+//     display
+// });
+// btnTwo.addEventListener('click', () => {
+//     console.log(btnTwo.value);
+// });
 
 
 

@@ -12,31 +12,31 @@
         
         <div class="w-full h-full flex flex-col justify-around">
             <div class=" bg-green-500 flex justify-end items-center ">
-                <input type="text" class="w-full h-14 m-2 bg-black text-4xl flex text-align: right text-white " placeholder="0">
+                <input type="text" id="output" class="w-full h-14 m-2 bg-black text-4xl text-right text-white " placeholder="0">
             </div>
             <div class="w-full h-10 flex flex-row justify-around items-center">
-                <div id="one" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">1</div>
-                <div id="two" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">2</div>
-                <div id="three" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">3</div>
-                <div id="multiple" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">X</div>
+                <button id="one" value="1" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">1</button>
+                <button id="two" value="2" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">2</button>
+                <button id="three" value="3" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">3</button>
+                <button id="clear" value="" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-green-700 leading-3 bg-yellow-400 ">AC</button>
             </div>
             <div class="w-full h-10 flex flex-row justify-around items-center">
-                <div id="four" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">4</div>
-                <div id="five" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">5</div>
-                <div id="six" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">6</div>
-                <div id="minus" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">-</div>
+                <button id="four" value="4" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">4</button>
+                <button id="five" value="5" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">5</button>
+                <button id="six" value="6" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">6</button>
+                <button id="minus" value="-" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">-</button>
             </div>
             <div class="w-full h-10 flex flex-row justify-around items-center">
-                <div id="seven" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">7</div>
-                <div id="eight" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">8</div>
-                <div id="nine" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">9</div>
-                <div id="plus" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">+</div>
+                <button id="seven" value="7" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">7</button>
+                <button id="eight" value="8" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">8</button>
+                <button id="nine" value="9" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">9</button>
+                <button id="plus" value="+" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">+</button>
             </div>
             <div class="w-full h-10 flex flex-row justify-around items-center">
-                <div id="zero" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">0</div>
-                <div id="zeroo" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">00</div>
-                <div id="division" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">/</div>
-                <div id="equal" class="border-2 p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">=</div>
+                <button id="zero" value="0" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">0</button>
+                <button id="zeroo" value="X" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">X</button>
+                <button id="division" value="/" onclick="display(this.value)" class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">/</button>
+                <button id="equal" value="="  class="border-2 rounded-lg p-4 flex justify-center items-center w-12 h-12 hover:bg-yellow-300 leading-3 ">=</button>
             </div>
         </div>
     </section>
