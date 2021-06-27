@@ -19,7 +19,7 @@ clearBtn.addEventListener('click', () => {
 });
 
 equalBtn.addEventListener('click', () => {
-    outputField.value = 00;
+    outputField.value = '';
 });
 
 
